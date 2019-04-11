@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css">
+		<link href="css/goods.css" rel="stylesheet" type="text/css">
+	</head>
+	<style>
+		#btn{width:100px;height:40px;background:#00BFFF;color:#fff;text-align:center;font:20px/40px "";}
+		.count{display:block;}
+	</style>
+	<body>
+			<body>
+				<div id="shortcut">
+					<div  class="yx_wrap">
+						 <ul class="tel">
+			               <li class="collect"> <a href="#">收藏视客眼镜网</a></li>
+						   <li style="float: left;" class="l"><span style="color: #c6c6c6">|</span></li>
+						   <li id="message" class="login" style="margin-left: 10px; font-family: 'Microsoft YaHei',微软雅黑;">
+							   <a href="login.html" >登录</a>
+							   <a href="register.html" > 注册</a>
+						   </li>
+						</ul>
+						<ul class="user_center">
+						       <li> <a href="#">我的视客</a></li>
+						       <li>  <a href="#">我的订单</a></li>
+						       <li><a href="#">帮助中心</a></li>
+						          <li><span>|</span></li>
+						         <li> <img src="https://www.vsigo.cn/images/head/maincart.png" class="shop"></li>
+						          <li><a href="car.html">购物车</a>
+						          <li><img src="https://www.vsigo.cn/images/head/phone.png" ></li>
+						         <li> <a id="#" href="#">手机版</a></li>
+						         <li> <img src="https://www.vsigo.cn/images/head/Customer.png"></li>
+						          <li><a href="#" onclick="OpenYWIM()">在线客服</a></li>
+						</ul>
+					</div>
+		           
+		    </div>
+			<div id="header">
+		        <div class="logo_new">
+		            <a href="index.html" title="视客眼镜网官网">
+		                <img src="https://images.vsigo.cn/web/logo_new.jpg" alt="视客眼镜网" title="视客眼镜网官网">
+					</a>
+		        </div>
+		        <div class="search">	
+						<div class="search_bd">
+							<input type="text" id="txt" >
+							<input type="button" id="btn" value="搜索一下"class="search_submit"/>
+						</div>
+						<ul id="list"></ul>
+					
+		            <div class="hot_keywords">
+		                <a  href="#">清氧清</a>
+						<a   href="#">博士伦</a>
+						<a  href="#">强生舒日</a>
+						<a  href="#">舒视氧</a>
+						<a   href="#" class="active">美若康</a>
+						<a  href="#">茵洛Clalen</a>
+		            </div>
+		        </div>
+		       
+		    </div>
+			<div class="menu_w">
+		        <div id="menu">
+		            <div id="allshort">
+		                <h2>
+		                   所有商品分类
+		                </h2>
+						<div id="allshortlist" style="display:none">
+							<div class="navlist" clstag="1">
+								<b></b>
+								<h3>
+									<a href="#">隐形眼镜</a><br>
+									<a href="#">隐形眼镜</a>
+									<a href="#">隐形眼镜</a>
+								
+								</h3>
+							</div>
+							<div class="navmore">
+								<div class="xilie">
+									<dl>
+										<dt>
+											<span>热销品牌</span>
+										</dt>
+										<dd>
+												<a  href="#" style="color:#d03845" title="" target="_blank">博士伦</a>
+												<a href="#" title="" target="_blank">强生</a>
+												<a href="#" title="" target="_blank">爱尔康视康</a>
+												<a  href="#" style="color:#d03845" title="" target="_blank">库博</a>
+												<a href="#" title="" target="_blank">海昌</a>
+												<a ref="#" style="color:#d03845" title="" target="_blank">美若康</a>
+												<a href="#" title="" target="_blank">Clalen</a>
+												<a href="#"title="" target="_blank">Miru米如</a>
+												<a href="#" title="" target="_blank">科莱博</a>
+												<a href="#" title="" target="_blank">菲士康</a>
+												<a href="#" title="" target="_blank">蔡司</a>
+												<a href="#" title="" target="_blank">卫康</a>
+												<a href="#" title="" target="_blank">更多品牌 &gt;&gt;</a>
+										</dd>
+									</dl>
+									<dl>
+									    <dt>
+											<span style="color:#0000CC">人气系列</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">博士伦 | 清朗</a>
+											    <a href="#"title="" target="_blank">库博 | 宝睛润</a>
+												<a href="#" title="" target="_blank">强生 | 舒日</a>
+												<a href="#" title="" target="_blank">视康 | 舒视氧</a>
+												<a href="#" title="" target="_blank">库博 | 佰视明</a>
+												<a href="#" title="" target="_blank">美若康 | 沐氧</a>
+												<a href="#" title="" target="_blank">茵洛 | Clalen</a>
+												<a href="#" title="" target="_blank">视康 | 日夜型</a>
+												<a href="#" title="" target="_blank">海昌 | EASY DAY</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span>抛弃周期</span>
+										</dt>
+										<dd>
+												<a href="#" style="color:#d03845" title="" target="_blank">日抛</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">双周抛</a><
+												<a href="#" title="" target="_blank">月抛</a>
+												<a href="#" title="" target="_blank">半年抛</a>
+												<a href="#" title="" target="_blank">年抛</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span style="color:#0000CC">佩戴场合</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">外出游玩（方便卫生）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">商务职场（舒适自在）</a>
+												<a href="#" title="" target="_blank">青春校园（经济适用）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">逛街聚会（安心长戴）</a>
+										</dd>
+								    </dl>
+									<dl>
+										<dt>
+											<span>镜片特点</span>
+										</dt>
+										<dd>
+											    <a href="#" style="color:#d03845" title="" target="_blank">高透氧（硅水凝胶）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">散光、远视、高度近视</a>
+												<a href="#" title="" target="_blank">防UV</a>
+										</dd>
+									</dl>
+								</div>
+								
+							</div>
+							<div class="navlist" clstag="2">
+								<b></b>
+								<h3>
+									<a href="#">隐形眼镜</a><br>
+									<a href="#">隐形眼镜</a>
+									<a href="#">隐形眼镜</a>
+									
+								</h3>
+							</div>
+							<div class="navmore">
+								<div class="xilie">
+									
+									<dl>
+									    <dt>
+											<span style="color:#0000CC">人气系列</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">博士伦 | 清朗</a>
+											    <a href="#"title="" target="_blank">库博 | 宝睛润</a>
+												<a href="#" title="" target="_blank">强生 | 舒日</a>
+												<a href="#" title="" target="_blank">视康 | 舒视氧</a>
+												<a href="#" title="" target="_blank">库博 | 佰视明</a>
+												<a href="#" title="" target="_blank">美若康 | 沐氧</a>
+												<a href="#" title="" target="_blank">茵洛 | Clalen</a>
+												<a href="#" title="" target="_blank">视康 | 日夜型</a>
+												<a href="#" title="" target="_blank">海昌 | EASY DAY</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span>抛弃周期</span>
+										</dt>
+										<dd>
+												<a href="#" style="color:#d03845" title="" target="_blank">日抛</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">双周抛</a><
+												<a href="#" title="" target="_blank">月抛</a>
+												<a href="#" title="" target="_blank">半年抛</a>
+												<a href="#" title="" target="_blank">年抛</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span style="color:#0000CC">佩戴场合</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">外出游玩（方便卫生）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">商务职场（舒适自在）</a>
+												<a href="#" title="" target="_blank">青春校园（经济适用）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">逛街聚会（安心长戴）</a>
+										</dd>
+								    </dl>
+									<dl>
+										<dt>
+											<span>镜片特点</span>
+										</dt>
+										<dd>
+											    <a href="#" style="color:#d03845" title="" target="_blank">高透氧（硅水凝胶）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">散光、远视、高度近视</a>
+												<a href="#" title="" target="_blank">防UV</a>
+										</dd>
+									</dl>
+								</div>
+								
+							</div>
+							<div class="navlist" clstag="3">
+								<b></b>
+								<h3>
+									<a href="#">隐形眼镜</a><br>
+									<a href="#">隐形眼镜</a>
+									<a href="#">隐形眼镜</a>
+								
+								</h3>
+							</div>
+							<div class="navmore">
+								<div class="xilie">
+									
+									<dl>
+										<dt>
+											<span>抛弃周期</span>
+										</dt>
+										<dd>
+												<a href="#" style="color:#d03845" title="" target="_blank">日抛</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">双周抛</a><
+												<a href="#" title="" target="_blank">月抛</a>
+												<a href="#" title="" target="_blank">半年抛</a>
+												<a href="#" title="" target="_blank">年抛</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span style="color:#0000CC">佩戴场合</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">外出游玩（方便卫生）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">商务职场（舒适自在）</a>
+												<a href="#" title="" target="_blank">青春校园（经济适用）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">逛街聚会（安心长戴）</a>
+										</dd>
+								    </dl>
+									<dl>
+										<dt>
+											<span>镜片特点</span>
+										</dt>
+										<dd>
+											    <a href="#" style="color:#d03845" title="" target="_blank">高透氧（硅水凝胶）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">散光、远视、高度近视</a>
+												<a href="#" title="" target="_blank">防UV</a>
+										</dd>
+									</dl>
+								</div>
+								
+							</div>
+							<div class="navlist" clstag="4">
+								<b></b>
+								<h3>
+									<a href="#">隐形眼镜</a><br>
+									<a href="#">隐形眼镜</a>
+									<a href="#">隐形眼镜</a>
+								
+								</h3>
+							</div>
+							<div class="navmore">
+								<div class="xilie">
+									
+									<dl>
+										<dt>
+											<span style="color:#0000CC">佩戴场合</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">外出游玩（方便卫生）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">商务职场（舒适自在）</a>
+												<a href="#" title="" target="_blank">青春校园（经济适用）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">逛街聚会（安心长戴）</a>
+										</dd>
+								    </dl>
+									<dl>
+										<dt>
+											<span>镜片特点</span>
+										</dt>
+										<dd>
+											    <a href="#" style="color:#d03845" title="" target="_blank">高透氧（硅水凝胶）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">散光、远视、高度近视</a>
+												<a href="#" title="" target="_blank">防UV</a>
+										</dd>
+									</dl>
+								</div>
+								
+							</div>
+							<div class="navlist" clstag="5">
+								<b></b>
+								<h3>
+									<a href="#">隐形眼镜</a><br>
+									<a href="#">隐形眼镜</a>
+									<a href="#">隐形眼镜</a>
+								
+								</h3>
+							</div>
+							<div class="navmore">
+								<div class="xilie">
+									<dl>
+										<dt>
+											<span>热销品牌</span>
+										</dt>
+										<dd>
+												<a  href="#" style="color:#d03845" title="" target="_blank">博士伦</a>
+												<a href="#" title="" target="_blank">强生</a>
+												<a href="#" title="" target="_blank">爱尔康视康</a>
+												<a  href="#" style="color:#d03845" title="" target="_blank">库博</a>
+												<a href="#" title="" target="_blank">海昌</a>
+												<a ref="#" style="color:#d03845" title="" target="_blank">美若康</a>
+												<a href="#" title="" target="_blank">Clalen</a>
+												<a href="#"title="" target="_blank">Miru米如</a>
+												<a href="#" title="" target="_blank">科莱博</a>
+												<a href="#" title="" target="_blank">菲士康</a>
+												<a href="#" title="" target="_blank">蔡司</a>
+												<a href="#" title="" target="_blank">卫康</a>
+												<a href="#" title="" target="_blank">更多品牌 &gt;&gt;</a>
+										</dd>
+									</dl>
+									<dl>
+									    <dt>
+											<span style="color:#0000CC">人气系列</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">博士伦 | 清朗</a>
+											    <a href="#"title="" target="_blank">库博 | 宝睛润</a>
+												<a href="#" title="" target="_blank">强生 | 舒日</a>
+												<a href="#" title="" target="_blank">视康 | 舒视氧</a>
+												<a href="#" title="" target="_blank">库博 | 佰视明</a>
+												<a href="#" title="" target="_blank">美若康 | 沐氧</a>
+												<a href="#" title="" target="_blank">茵洛 | Clalen</a>
+												<a href="#" title="" target="_blank">视康 | 日夜型</a>
+												<a href="#" title="" target="_blank">海昌 | EASY DAY</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span>抛弃周期</span>
+										</dt>
+										<dd>
+												<a href="#" style="color:#d03845" title="" target="_blank">日抛</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">双周抛</a><
+												<a href="#" title="" target="_blank">月抛</a>
+												<a href="#" title="" target="_blank">半年抛</a>
+												<a href="#" title="" target="_blank">年抛</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<span style="color:#0000CC">佩戴场合</span>
+										</dt>
+										<dd>
+												<a href="#" title="" target="_blank">外出游玩（方便卫生）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">商务职场（舒适自在）</a>
+												<a href="#" title="" target="_blank">青春校园（经济适用）</a>
+												<a href="#" style="color:#d03845" title="" target="_blank">逛街聚会（安心长戴）</a>
+										</dd>
+								    </dl>
+									
+								</div>
+								
+							</div>
+							
+						<div>
+				
+		            </div>
+		         
+		        </div>
+		    </div>
+			   <div class="navitems">
+			    <ul class="top_nav" >
+			        <li><a class="font-14 bold" href="#">首页</a></li>
+			        <li><a class="font-14 bold" href="#">海淘	<i style="font-size:12px;position:relative;top:-7px;font-weight:400;left:-2px;">NEW</i></a></li>
+			        <li ><a class="font-14 bold" href="#">i秒杀 / 今日值得买</a></li>
+			        <li ><a class="font-14 bold" href="#">隐形眼镜</a></li>
+			        <li ><a class="font-14 bold" href="#">硅水凝胶</a></li>
+			        <li ><a class="font-14 bold" href="#">美瞳</a></li>
+			        <li><a class="font-14 bold" href="#">镜片护理</a></li>
+			        <li><a class="font-14 bold" href="#">眼镜学堂</a></li>
+			        <li><a class="font-14 bold" href="#">金币商城</a></li>
+			    </ul>
+			    <div class="treasure">
+			        <a href="car.html"><mark>去购物车结算<mark></a>
+			    </div>
+			</div>
+		</div>
+		</div>
+		<ul class="gondslist" id="cont">
+			
+		</ul>
+	</body>
+	<script src="js/jquery.2.2.4.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="libs/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="libs/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	function search(){
+			//2.选择元素
+			this.txt=document.getElementById("txt");
+			this.list=document.getElementById("list");
+			this.url="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su";
+			//3.绑定事件
+			this.addevent();
+		}
+	search.prototype.addevent=function(){
+			var that=this;
+			this.txt.onkeyup=function(){
+			//4.保存输入框的内容
+			that.v=that.txt.value;
+			//5.准备请求数据
+			that.load();
+				
+			}
+		}
+	search.prototype.load=function(){
+			var that=this;
+			jsonp(this.url,function(res){
+				that.res=res;
+				that.display();
+			},{
+				_name:"cb",
+				cb:"abc",
+				wd:this.v
+			});
+		}
+	search.prototype.display=function(){
+			console.log(this.res.s)
+			var str="";
+		    this.res.s.forEach(
+			function(v){
+				str+=`<li>${v}</li>`
+			}
+			)
+				
+			
+			this.list.innerHTML=str;
+		}
+	new search();
+	
+	class List{
+		constructor(options) {
+			//1.解析参数
+			this.cont = options.cont;
+			this.url = options.url;
+			this.clientH=options.clientH;
+			
+			 //2.请求数据
+			this.load();
+			//7.绑定事件
+			this.addevent();
+		}
+		load(){
+		     var that = this;
+			ajax({
+				url:this.url,
+			    success:function(res){
+		//		3.请求成功之后解析数据,并渲染页面
+				that.res = JSON.parse(res)
+				that.display()
+				}
+						})
+		}
+		display(){
+//				4.遍历数据,拼接结构,渲染页面
+			var str="";
+			for(var i=0;i<this.res.length;i++){
+				str+=`
+				<li >
+						<div class="hot_pro"  index="${this.res[i].goodId}">
+						
+								<img abc="${this.res[i].src}" alt="${this.res[i].aval}">
+						
+							<p class="pro_title">
+								<a href="#" target="_blank" title="${this.res[i].aval}">${this.res[i].aval}</a>
+							</p>
+							<p class="pro_cx">
+								<span class="sprice">${this.res[i].span1}</span>
+								<span class="cxtag">${this.res[i].span2}</span>
+							</p>
+							<p class="pro_comm">
+								<span class="comm_num">${this.res[i].span3}</span>
+								评论
+								<span class="sep">|</span>
+								<span class="comm_num">${this.res[i].span4}</span>
+								好评
+							</p>
+							<input type="button" value="加入购物车" id="btn"/>
+						</div>
+					</li>`;
+				this.cont.innerHTML=str;}
+				//5.判断是否在可视区域内，进行懒加载,在可视区域内出现，不在不出现
+				//6.执行滚动事件，滚动过程中，进行懒加载
+			   this.Lazyload()
+			   this.scroll()
+			}//这里是display结束的
+			
+			Lazyload(){
+				var aimg = document.querySelectorAll("#cont img");
+				for(var i=0;i<aimg.length;i++){	
+						
+					     var imgT = aimg[i].offsetTop;
+						if(this.clientH > imgT){
+						aimg[i].src = aimg[i].getAttribute("abc");
+					}
+				}
+			}//这里是Lazyload结束
+			scroll(){
+				var aimg = document.querySelectorAll("#cont img");
+				var that=this;
+					document.onscroll = function(){
+						var t=document.documentElement.scrollTop
+							for(var i=0;i<aimg.length;i++){	
+								var imgT = aimg[i].offsetTop;
+									if(that.clientH + t > imgT){
+									aimg[i].src = aimg[i].getAttribute("abc");
+								}
+							}
+						
+					}
+				
+			}//这里是滚动结束
+			addevent(){
+				var that=this;
+				this.cont.addEventListener("click",function(eve){
+					console.log("dianji0")
+					var e=eve||window.event;
+					var target=e.target||e.srcElement;
+					if(target.nodeName=="INPUT"){
+						//8.被点击时,获取货号,存cookie[{},{}]
+						that.id = target.parentNode.getAttribute("index");
+					
+					
+						that.setCookie()
+					}
+					//9.点击的如果是那个带有链接a,时，保存另外一个cookie,名叫cont和购物车逻辑一样
+					////8.被点击时,获取货号,存{id:123}
+					if(target.nodeName=="IMG"){
+						console.log("点击了图片")
+						that.gooodid = target.parentNode.getAttribute("index");
+						that.count = [{"id":that.gooodid}];
+						that.setcookie2()
+						location.href="count.html"
+					}
+					
+				})
+			}//绑定结束
+			//10.这一次只需要判断开始是否有这个cookie,没有设置，有的话修改
+			setcookie2(){
+				
+				setCookie("count",JSON.stringify(this.count))
+				
+			
+			}
+			setCookie(){
+			//				因为要使用一条cookie存商品,所以数据选择数组里面放对象[{},{}]
+							this.goods = getCookie("goods");
+			//				情况1:第一次添加
+							if(this.goods == ""){
+								this.goods = [{
+									id:this.id,
+									num:1
+								}];
+							}else{
+			//					情况2:不是第一次添加
+								this.goods = JSON.parse(this.goods);
+			//					新情况1：这次点击的是老数据
+								var onoff = true;
+								this.goods.forEach((v)=>{
+									if(v.id == this.id){
+										v.num++
+										onoff = false;
+									}
+								})
+								
+			//					新情况2：这次点击的是新数据
+								if(onoff){
+									this.goods.push({
+										id:this.id,
+										num:1
+									})
+								}
+							}
+			//				所有关于数组的操作结束之后,将数组转成字符再设置到cookie中
+							setCookie("goods",JSON.stringify(this.goods))
+		}
+			
+			
+			
+	}
+	
+	new List({
+		
+		clientH:document.documentElement.clientHeight,
+		cont:document.getElementById("cont"),
+		url:"http://localhost/project-vsigo/data/goods.json"
+	})
+
+
+
+	</script>
+</html>
